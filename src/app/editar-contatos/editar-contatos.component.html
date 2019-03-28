@@ -1,0 +1,45 @@
+<div class="container">
+
+    <form #cadastro="ngForm">
+        <h3>Editar Contatos</h3>
+    
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="inputName4">Nome:</label>
+          <input type="text" class="form-control" id="inputName4" name="nome" placeholder="Nome" [(ngModel)]="contato.nome" required>
+        </div>
+    
+        <div class="form-group col-md-3">
+          <label for="inputTelephone4">Telefone:</label>
+          <input type="number" class="form-control" id="inputTelephone4" name="telefone" placeholder="Telefone" [(ngModel)]="contato.telefone" required>
+        </div>
+      </div>
+    
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="inputEmail4">Email:</label>
+          <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email" [(ngModel)]="contato.email" required>
+        </div>
+    
+        <div class="form-group col-md-3">
+          <label for="inputState">Tipo:</label>
+          <select id="inputState" class="form-control" name="tipo" [(ngModel)]="contato.tipo" required>
+            <option value="null" selected>Escolha...</option>
+            <option value="Amigo da Família">Amigo da Família</option>
+            <option value="Aluno da Apex">Aluno da Apex</option>
+            <option value="Funcionário Qualificado">Funcionário Qualificado</option>
+            <option value="Pessoa com Formação">Pessoa com Formação</option>
+            <option value="Homem com Estudo">Homem com Estudo</option>
+          </select>
+        </div>
+      </div>
+
+      <button (click)="salvarContato()" type="button" class="btn btn-primary">Salvar</button> 
+    
+      <a routerLink="/detalhes">
+        <button type="button" class="btn btn-primary">Voltar</button>
+      </a>
+    
+    </form>
+    
+    </div>
