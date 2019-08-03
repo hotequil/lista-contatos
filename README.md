@@ -6,11 +6,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm start`.
 
-## Install the project
+## Install the dependencies
 
 Run `npm install`.
 
-## Update the project
+## Update the dependencies
 
 Run `npm update`.
 
